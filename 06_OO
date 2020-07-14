@@ -1,0 +1,25 @@
+class Essen{
+  String geschmack;
+  int menge;
+  Essen(String geschmack, int menge){
+    this.geschmack = geschmack;
+    this.menge = menge;
+  }
+  void zeigeeigenschaften(){
+    print(geschmack);
+    print(menge);
+  }
+  
+}
+
+
+void main(){
+  Essen spagetti = Essen("lecker", 100);
+  //spagetti.geschmack = "lecker";
+  //spagetti.menge = 100;
+  spagetti.zeigeeigenschaften();
+  Essen gemuese = Essen("nicht lecker", 10);
+  //gemuese.geschmack = "nicht sehr lecker";
+  //gemuese.menge = 10;
+  gemuese.zeigeeigenschaften();
+}
